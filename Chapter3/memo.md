@@ -95,3 +95,27 @@ elif （式）:
 else:
     コード4
 ```
+
+### 関数
+
+
+
+### 組み込み関数
+
+| 組み込み関数 | 詳細 | 例 |
+| --- | --- | --- |
+| len | オブジェクトの長さを返す |len("Monty") >> 5 |
+| str | 引数を文字列に変換する | str(100) >> '100' |
+| int | 引数を整数に変換する | int('1') >> 1 |
+| float | 引数を浮動小数点オブジェクトに変換する | float(200) >> 200.0) |
+| input | 引数を入力させるオブジェクト | input("Enter your age") >> Enter your age: |
+
+str,int,floatは文字列、整数、浮動小数点として扱えるオブジェクトのみで
+扱えない場合はエラーになる。
+
+```
+>>> int("prince")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'prince'
+```
